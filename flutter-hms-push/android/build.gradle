@@ -25,9 +25,8 @@ apply plugin: "com.android.library"
 
 android {
     compileSdkVersion 33
-    if (project.android.hasProperty("namespace")) {
-        namespace 'com.huawei.hms.flutter.push'
-    }
+    namespace "com.huawei.hms.flutter.push"
+
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 33
