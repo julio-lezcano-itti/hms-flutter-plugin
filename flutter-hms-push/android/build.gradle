@@ -1,36 +1,16 @@
+plugins {
+    id 'com.android.library'
+}
+
 group "com.huawei.hms.flutter.push"
 version "1.0"
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url "https://developer.huawei.com/repo/" }
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.13.0'
-    }
-}
-
-rootProject.allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url "https://developer.huawei.com/repo/" }
-    }
-}
-
-apply plugin: "com.android.library"
-
 android {
+    namespace 'com.huawei.hms.flutter.push'
     compileSdkVersion 36
-    if (project.android.hasProperty("namespace")) {
-        namespace 'com.huawei.hms.flutter.push'
-    }
+
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 36
     }
 
     lintOptions {
