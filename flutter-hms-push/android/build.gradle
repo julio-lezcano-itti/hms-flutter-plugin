@@ -5,6 +5,12 @@ plugins {
 group "com.huawei.hms.flutter.push"
 version "1.0"
 
+repositories {
+    google()
+    mavenCentral()
+    maven { url "https://developer.huawei.com/repo/" }
+}
+
 android {
     namespace 'com.huawei.hms.flutter.push'
     compileSdkVersion 36
