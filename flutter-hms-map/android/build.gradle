@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.4.1'
+        classpath 'com.android.tools.build:gradle:8.13.0'
     }
 }
 
@@ -24,13 +24,13 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 36
     if (project.android.hasProperty("namespace")) {
         namespace 'com.huawei.hms.flutter.map'
     }
     defaultConfig {
         minSdkVersion 20
-        targetSdkVersion 33
+        targetSdkVersion 36
     }
 
     lintOptions {
@@ -38,8 +38,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 

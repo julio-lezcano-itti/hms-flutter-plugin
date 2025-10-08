@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.4'
+        classpath 'com.android.tools.build:gradle:8.13.0'
     }
 }
 
@@ -24,13 +24,13 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 36
     if (project.android.hasProperty("namespace")) {
         namespace 'com.huawei.hms.flutter.analytics'
     }
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 33
+        targetSdkVersion 36
     }
     lintOptions {
         disable 'InvalidPackage'
